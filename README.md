@@ -121,7 +121,9 @@ SOFTWARE.
   </div>
 </div>
 ```
-        📁 E:\titan_terraform\titan_terraform
+
+<div align="center">
+  <h3>📁 E:\titan_terraform\titan_terraform</h3>
       </div>
       <!-- 1. Root Workspace Node -->
       <div style="background: #623ce4; color: #ffffff; border: 1px solid #c084fc; border-radius: 10px; padding: 12px 18px; max-width: 420px; margin: 0 auto; box-shadow: 0 4px 14px rgba(0,0,0,0.4);">
