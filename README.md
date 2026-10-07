@@ -122,176 +122,99 @@ SOFTWARE.
 </div>
 ```
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>titan_terraform Architecture Flowchart</title>
-  <style>
-    body {
-      background-color: #0b0f19;
-      color: #e6edf3;
+<div style="display: flex; justify-content: center; padding: 20px 0; background: transparent;">
+  <!-- Vibrant Animated Border Wrapper -->
+  <div style="
+    background: linear-gradient(135deg, #ff007f, #7928ca, #00dfd8, #43e97b, #ffbe00);
+    background-size: 300% 300%;
+    animation: vibrantFlow 8s ease infinite;
+    padding: 3px;
+    border-radius: 18px;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 0 25px rgba(121, 40, 202, 0.45);
+  ">
+    <style>
+      @keyframes vibrantFlow {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+    </style>
+    <!-- Inner Dark Container -->
+    <div style="
+      background-color: #0d1117;
+      border-radius: 15px;
+      padding: 28px 24px;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      padding: 40px 20px;
-      margin: 0;
-    }
-    /* Vibrant Multi-Color Animated Border Container */
-    .vibrant-wrapper {
-      position: relative;
-      background: linear-gradient(135deg, #ff007f, #7928ca, #00dfd8, #43e97b, #ffbe00);
-      background-size: 300% 300%;
-      animation: vibrantGlow 8s ease infinite;
-      padding: 3px;
-      border-radius: 20px;
-      max-width: 960px;
-      width: 100%;
-      box-shadow: 0 0 25px rgba(121, 40, 202, 0.45);
-    }
-    @keyframes vibrantGlow {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-    .card-body {
-      background: #0d1117;
-      border-radius: 18px;
-      padding: 32px 28px;
-    }
-    .header-tag {
-      font-size: 0.85rem;
-      letter-spacing: 2px;
-      color: #00dfd8;
-      text-transform: uppercase;
-      font-weight: 700;
-    }
-   .project-path {
-      font-family: 'Courier New', Courier, monospace;
-      color: #ffbe00;
-      font-size: 1.15rem;
-      margin: 6px 0 24px 0;
-      word-break: break-all;
-    }
-    /* Flowchart Node Styling */
-    .flow-node {
-      border-radius: 10px;
-      padding: 12px 18px;
-      margin: 8px;
-      font-size: 0.9rem;
-      font-weight: 600;
+      color: #e6edf3;
       text-align: center;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-    }
-    .node-root {
-      background: #7928ca;
-      color: #ffffff;
-      border: 1px solid #c084fc;
-      max-width: 380px;
-      margin: 0 auto;
-    }
-    .node-init {
-      background: #1f293d;
-      color: #93c5fd;
-      border: 1px solid #3b82f6;
-      max-width: 440px;
-      margin: 0 auto;
-    }
-    .node-module {
-      background: #161b22;
-      border: 1px solid #30363d;
-      flex: 1;
-      min-width: 180px;
-    }
-    .node-net { border-top: 3px solid #00dfd8; color: #a5f3fc; }
-    .node-sec { border-top: 3px solid #ff007f; color: #fbcfe8; }
-    .node-comp { border-top: 3px solid #ffbe00; color: #fef08a; }
-    .node-state { border-top: 3px solid #43e97b; color: #bbf7d0; }
-    .node-output {
-      background: #14271c;
-      color: #43e97b;
-      border: 1px solid #22c55e;
-      max-width: 440px;
-      margin: 0 auto;
-    }
-    /* Flow Arrows */
-    .connector {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #6e7681;
-      font-size: 1.5rem;
-      line-height: 1;
-      margin: 4px 0;
-    }
-    .modules-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      justify-content: center;
-    }
-    .file-tag {
-      display: block;
-      font-size: 0.75rem;
-      font-family: 'Courier New', Courier, monospace;
-      font-weight: normal;
-      color: #8b949e;
-      margin-top: 4px;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Vibrant Gradient Outer Frame -->
-  <div class="vibrant-wrapper">
-    <div class="card-body">
-       <!-- Header & Local Path -->
-      <div align="center">
-        <span class="header-tag">Infrastructure Pipeline & File Layout</span>
-        <div class="project-path">📁 E:\titan_terraform\titan_terraform</div>
+    ">
+      <!-- Flowchart Header & File Path -->
+      <span style="font-size: 0.8rem; letter-spacing: 2px; color: #00dfd8; text-transform: uppercase; font-weight: 700; display: block;">
+        Infrastructure Pipeline &amp; File Layout
+      </span>
+      <div style="font-family: 'Courier New', Courier, monospace; color: #ffbe00; font-size: 1.1rem; font-weight: bold; margin: 6px 0 20px 0; word-break: break-all;">
+        📁 E:\titan_terraform\titan_terraform
       </div>
-      <!-- Root Configuration Node -->
-      <div class="flow-node node-root">
-        🚀 Root Workspace
-        <span class="file-tag">main.tf | variables.tf | outputs.tf | versions.tf</span>
+      <!-- 1. Root Workspace Node -->
+      <div style="background: #623ce4; color: #ffffff; border: 1px solid #c084fc; border-radius: 10px; padding: 12px 18px; max-width: 420px; margin: 0 auto; box-shadow: 0 4px 14px rgba(0,0,0,0.4);">
+        <strong style="font-size: 0.95rem;">🚀 Root Workspace</strong>
+        <span style="display: block; font-size: 0.75rem; font-family: monospace; color: #e9d5ff; margin-top: 4px;">
+          main.tf &nbsp;|&nbsp; variables.tf &nbsp;|&nbsp; outputs.tf &nbsp;|&nbsp; versions.tf
+        </span>
       </div>
-      <div class="connector">↓</div>
-      <!-- Terraform Lifecycle Node -->
-      <div class="flow-node node-init">
-        ⚙️ Terraform Pipeline Lifecycle
-        <span class="file-tag">terraform init ➔ validate ➔ plan ➔ apply</span>
+      <!-- Arrow Down -->
+      <div style="color: #8b949e; font-size: 1.5rem; line-height: 1.4;">↓</div>
+      <!-- 2. Terraform Lifecycle Node -->
+      <div style="background: #1f293d; color: #93c5fd; border: 1px solid #3b82f6; border-radius: 10px; padding: 12px 18px; max-width: 460px; margin: 0 auto; box-shadow: 0 4px 14px rgba(0,0,0,0.4);">
+        <strong style="font-size: 0.95rem;">⚙️ Terraform Pipeline Lifecycle</strong>
+        <span style="display: block; font-size: 0.75rem; font-family: monospace; color: #bfdbfe; margin-top: 4px;">
+          terraform init ➔ validate ➔ plan ➔ apply
+        </span>
       </div>
-      <div class="connector">↓</div>
-      <!-- Modular Architecture Tier (Horizontal Flow) -->
-      <div class="modules-grid">
-        <div class="flow-node node-module node-net">
-          🌐 modules/vpc
-          <span class="file-tag">VPC, Subnets, IGW, NAT</span>
+      <!-- Arrow Down -->
+      <div style="color: #8b949e; font-size: 1.5rem; line-height: 1.4;">↓</div>
+      <!-- 3. Modular Architecture Grid -->
+      <div style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin: 6px 0;">
+        <!-- VPC Module -->
+        <div style="background: #161b22; border: 1px solid #30363d; border-top: 3px solid #00dfd8; border-radius: 10px; padding: 12px 14px; flex: 1; min-width: 170px; max-width: 200px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+          <strong style="color: #a5f3fc; font-size: 0.88rem;">🌐 modules/vpc</strong>
+          <span style="display: block; font-size: 0.72rem; font-family: monospace; color: #8b949e; margin-top: 4px;">
+            VPC, Subnets, IGW, NAT
+          </span>
         </div>
-        <div class="flow-node node-module node-sec">
-          🔒 modules/security
-          <span class="file-tag">IAM Roles, Security Groups, KMS</span>
+        <!-- Security Module -->
+        <div style="background: #161b22; border: 1px solid #30363d; border-top: 3px solid #ff007f; border-radius: 10px; padding: 12px 14px; flex: 1; min-width: 170px; max-width: 200px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+          <strong style="color: #fbcfe8; font-size: 0.88rem;">🔒 modules/security</strong>
+          <span style="display: block; font-size: 0.72rem; font-family: monospace; color: #8b949e; margin-top: 4px;">
+            IAM, Security Groups, KMS
+          </span>
         </div>
-        <div class="flow-node node-module node-comp">
-          ⚡ modules/compute
-          <span class="file-tag">EC2, Auto Scaling, ALB, EKS</span>
+        <!-- Compute Module -->
+        <div style="background: #161b22; border: 1px solid #30363d; border-top: 3px solid #ffbe00; border-radius: 10px; padding: 12px 14px; flex: 1; min-width: 170px; max-width: 200px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+          <strong style="color: #fef08a; font-size: 0.88rem;">⚡ modules/compute</strong>
+          <span style="display: block; font-size: 0.72rem; font-family: monospace; color: #8b949e; margin-top: 4px;">
+            EC2, ASG, ALB, EKS
+          </span>
         </div>
-        <div class="flow-node node-module node-state">
-          🗄️ Backend State
-          <span class="file-tag">S3 Bucket & DynamoDB Lock</span>
+        <!-- Backend State -->
+        <div style="background: #161b22; border: 1px solid #30363d; border-top: 3px solid #43e97b; border-radius: 10px; padding: 12px 14px; flex: 1; min-width: 170px; max-width: 200px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+          <strong style="color: #bbf7d0; font-size: 0.88rem;">🗄️ Backend State</strong>
+          <span style="display: block; font-size: 0.72rem; font-family: monospace; color: #8b949e; margin-top: 4px;">
+            S3 Bucket &amp; DynamoDB
+          </span>
         </div>
       </div>
-      <div class="connector">↓</div>
-      <!-- Output / Deployment Result Node -->
-      <div class="flow-node node-output">
-        ✅ AWS Live Infrastructure Provisioned
-        <span class="file-tag">VPC Endpoints, DNS, Load Balancers, CloudWatch Alerts</span>
+      <!-- Arrow Down -->
+      <div style="color: #8b949e; font-size: 1.5rem; line-height: 1.4;">↓</div>
+      <!-- 4. Final Provisioned Node -->
+      <div style="background: #14271c; color: #43e97b; border: 1px solid #22c55e; border-radius: 10px; padding: 12px 18px; max-width: 480px; margin: 0 auto; box-shadow: 0 4px 14px rgba(0,0,0,0.4);">
+        <strong style="font-size: 0.95rem;">✅ AWS Live Infrastructure Provisioned</strong>
+        <span style="display: block; font-size: 0.75rem; font-family: monospace; color: #86efac; margin-top: 4px;">
+          VPC Endpoints, DNS, Load Balancers, CloudWatch Alerts
+        </span>
       </div>
-
     </div>
   </div>
-
-</body>
-</html>
-```
+</div>
