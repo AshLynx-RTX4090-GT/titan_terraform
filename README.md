@@ -88,7 +88,7 @@ terraform apply
 ```
 <div align="center">
   
-<h1>MIT License</h1>
+<h1>⚖️MIT License</h1>
 
 Copyright (c) 2024 titian_terraform contributors
 
