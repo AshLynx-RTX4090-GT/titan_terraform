@@ -86,7 +86,9 @@ terraform apply
 
 ```
 ```
-MIT License
+<div align="center">
+  </h1>
+</b>MIT License</b>
 
 Copyright (c) 2024 titian_terraform contributors
 
