@@ -121,40 +121,6 @@ SOFTWARE.
   </div>
 </div>
 ```
-
-<div style="display: flex; justify-content: center; padding: 20px 0; background: transparent;">
-  <!-- Vibrant Animated Border Wrapper -->
-  <div style="
-    background: linear-gradient(135deg, #ff007f, #7928ca, #00dfd8, #43e97b, #ffbe00);
-    background-size: 300% 300%;
-    animation: vibrantFlow 8s ease infinite;
-    padding: 3px;
-    border-radius: 18px;
-    max-width: 900px;
-    width: 100%;
-    box-shadow: 0 0 25px rgba(121, 40, 202, 0.45);
-  ">
-    <style>
-      @keyframes vibrantFlow {
-        0% { background-position: 0% 50%; }
-        50% { background-position: 100% 50%; }
-        100% { background-position: 0% 50%; }
-      }
-    </style>
-    <!-- Inner Dark Container -->
-    <div style="
-      background-color: #0d1117;
-      border-radius: 15px;
-      padding: 28px 24px;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-      color: #e6edf3;
-      text-align: center;
-    ">
-      <!-- Flowchart Header & File Path -->
-      <span style="font-size: 0.8rem; letter-spacing: 2px; color: #00dfd8; text-transform: uppercase; font-weight: 700; display: block;">
-        Infrastructure Pipeline &amp; File Layout
-      </span>
-      <div style="font-family: 'Courier New', Courier, monospace; color: #ffbe00; font-size: 1.1rem; font-weight: bold; margin: 6px 0 20px 0; word-break: break-all;">
         📁 E:\titan_terraform\titan_terraform
       </div>
       <!-- 1. Root Workspace Node -->
