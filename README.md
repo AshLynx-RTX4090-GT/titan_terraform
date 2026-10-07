@@ -48,36 +48,7 @@
         <br/>
         <span style="color: #ffffff; font-family: sans-serif; font-size: 14px; font-weight: 600;">HashiCorp Terraform</span>
       </td>
----
-      <!-- 2. AMAZON WEB SERVICES (White 'aws' Text + Animated Golden Smile Curve) -->
-      <td align="center" width="280" style="padding: 24px; border: 1px solid rgba(255,255,255,0.08); background: #0d1117;">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 110" width="190" height="80">
-          <defs>
-            <filter id="aws-gold-glow" x="-20%" y="-20%" width="140%" height="140%">
-              <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#FF9900" flood-opacity="0.8" />
-            </filter>
-          </defs>
-          <g>
-            <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="2.8s" repeatCount="indefinite" ease="easeInOut" />
-            <!-- AWS Letters in Pure White -->
-            <text x="130" y="58" text-anchor="middle" font-family="'Amazon Ember', 'Arial Black', sans-serif" font-weight="900" font-size="58" fill="#FFFFFF" letter-spacing="-1">
-              aws
-            </text>
-            <!-- Glowing Yellow/Orange Smile with Pulse -->
-            <g filter="url(#aws-gold-glow)">
-              <path d="M 68 76 Q 130 106 186 78" fill="none" stroke="#FF9900" stroke-width="7" stroke-linecap="round">
-                <animate attributeName="stroke-width" values="6.5;8.5;6.5" dur="2s" repeatCount="indefinite" />
-              </path>
-              <polygon points="183,72 196,78 188,88" fill="#FF9900">
-                <animateTransform attributeName="transform" type="scale" values="1;1.15;1" transform-origin="188 78" dur="2s" repeatCount="indefinite" />
-              </polygon>
-            </g>
-          </g>
-        </svg>
-        <br/>
-        <span style="color: #ffffff; font-family: sans-serif; font-size: 14px; font-weight: 600;">Amazon Web Services</span>
-      </td>
----
+
       <!-- 3. AWS SOLUTIONS ARCHITECT (Floating Badge + Neon Blue Shadow) -->
       <td align="center" width="260" style="padding: 24px; border: 1px solid rgba(255,255,255,0.08); background: #0d1117; border-radius: 0 12px 12px 0;">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="85" height="85">
