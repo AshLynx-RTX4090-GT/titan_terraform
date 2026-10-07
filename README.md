@@ -121,3 +121,177 @@ SOFTWARE.
   </div>
 </div>
 ```
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>titan_terraform Architecture Flowchart</title>
+  <style>
+    body {
+      background-color: #0b0f19;
+      color: #e6edf3;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      margin: 0;
+    }
+    /* Vibrant Multi-Color Animated Border Container */
+    .vibrant-wrapper {
+      position: relative;
+      background: linear-gradient(135deg, #ff007f, #7928ca, #00dfd8, #43e97b, #ffbe00);
+      background-size: 300% 300%;
+      animation: vibrantGlow 8s ease infinite;
+      padding: 3px;
+      border-radius: 20px;
+      max-width: 960px;
+      width: 100%;
+      box-shadow: 0 0 25px rgba(121, 40, 202, 0.45);
+    }
+    @keyframes vibrantGlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .card-body {
+      background: #0d1117;
+      border-radius: 18px;
+      padding: 32px 28px;
+    }
+    .header-tag {
+      font-size: 0.85rem;
+      letter-spacing: 2px;
+      color: #00dfd8;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+   .project-path {
+      font-family: 'Courier New', Courier, monospace;
+      color: #ffbe00;
+      font-size: 1.15rem;
+      margin: 6px 0 24px 0;
+      word-break: break-all;
+    }
+    /* Flowchart Node Styling */
+    .flow-node {
+      border-radius: 10px;
+      padding: 12px 18px;
+      margin: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+    .node-root {
+      background: #7928ca;
+      color: #ffffff;
+      border: 1px solid #c084fc;
+      max-width: 380px;
+      margin: 0 auto;
+    }
+    .node-init {
+      background: #1f293d;
+      color: #93c5fd;
+      border: 1px solid #3b82f6;
+      max-width: 440px;
+      margin: 0 auto;
+    }
+    .node-module {
+      background: #161b22;
+      border: 1px solid #30363d;
+      flex: 1;
+      min-width: 180px;
+    }
+    .node-net { border-top: 3px solid #00dfd8; color: #a5f3fc; }
+    .node-sec { border-top: 3px solid #ff007f; color: #fbcfe8; }
+    .node-comp { border-top: 3px solid #ffbe00; color: #fef08a; }
+    .node-state { border-top: 3px solid #43e97b; color: #bbf7d0; }
+    .node-output {
+      background: #14271c;
+      color: #43e97b;
+      border: 1px solid #22c55e;
+      max-width: 440px;
+      margin: 0 auto;
+    }
+    /* Flow Arrows */
+    .connector {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #6e7681;
+      font-size: 1.5rem;
+      line-height: 1;
+      margin: 4px 0;
+    }
+    .modules-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+    }
+    .file-tag {
+      display: block;
+      font-size: 0.75rem;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: normal;
+      color: #8b949e;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Vibrant Gradient Outer Frame -->
+  <div class="vibrant-wrapper">
+    <div class="card-body">
+       <!-- Header & Local Path -->
+      <div align="center">
+        <span class="header-tag">Infrastructure Pipeline & File Layout</span>
+        <div class="project-path">📁 E:\titan_terraform\titan_terraform</div>
+      </div>
+      <!-- Root Configuration Node -->
+      <div class="flow-node node-root">
+        🚀 Root Workspace
+        <span class="file-tag">main.tf | variables.tf | outputs.tf | versions.tf</span>
+      </div>
+      <div class="connector">↓</div>
+      <!-- Terraform Lifecycle Node -->
+      <div class="flow-node node-init">
+        ⚙️ Terraform Pipeline Lifecycle
+        <span class="file-tag">terraform init ➔ validate ➔ plan ➔ apply</span>
+      </div>
+      <div class="connector">↓</div>
+      <!-- Modular Architecture Tier (Horizontal Flow) -->
+      <div class="modules-grid">
+        <div class="flow-node node-module node-net">
+          🌐 modules/vpc
+          <span class="file-tag">VPC, Subnets, IGW, NAT</span>
+        </div>
+        <div class="flow-node node-module node-sec">
+          🔒 modules/security
+          <span class="file-tag">IAM Roles, Security Groups, KMS</span>
+        </div>
+        <div class="flow-node node-module node-comp">
+          ⚡ modules/compute
+          <span class="file-tag">EC2, Auto Scaling, ALB, EKS</span>
+        </div>
+        <div class="flow-node node-module node-state">
+          🗄️ Backend State
+          <span class="file-tag">S3 Bucket & DynamoDB Lock</span>
+        </div>
+      </div>
+      <div class="connector">↓</div>
+      <!-- Output / Deployment Result Node -->
+      <div class="flow-node node-output">
+        ✅ AWS Live Infrastructure Provisioned
+        <span class="file-tag">VPC Endpoints, DNS, Load Balancers, CloudWatch Alerts</span>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
+```
