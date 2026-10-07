@@ -88,7 +88,7 @@ terraform apply
 ```
 <div align="center">
   
-</h1> </b>MIT License</b> </h1>
+</h1></b>MIT License</b></h1>
 
 Copyright (c) 2024 titian_terraform contributors
 
@@ -113,8 +113,7 @@ SOFTWARE.
 
 ```
 <div align="center">
-  ⚠️ DISCLAIMER
-      </h2>
+  </h1>⚠️ DISCLAIMER</h1>
       <p style="margin: 0; font-size: 0.95rem;">
         <strong>Important:</strong> This project and the accompanying Terraform code are provided for educational, demonstration, and architectural prototyping purposes. Deploying resources using these templates will provision real cloud infrastructure and may incur costs on your AWS billing account. Review and validate all configurations against your organization's security, compliance, and governance policies before applying them to production environments. The author assumes no responsibility for any unintended expenses, resource modifications, or outages resulting from using this repository.
       </p>
