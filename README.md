@@ -187,7 +187,7 @@ SOFTWARE.
   </div>
 </div>
 
-## Vibrant Infrastructure Flow
+## Infrastructure Flow
 
 ```mermaid
 flowchart TB
