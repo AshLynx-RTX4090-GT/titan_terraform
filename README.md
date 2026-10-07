@@ -1,7 +1,7 @@
 <div align="center">
 
   <!-- Top Running Banner GIF -->
-  <img src="file:///E:/titan_terraform/4eb5fce48369edc4efcea80f6bd52739.gif" alt="Titan Terraform Animation" width="100%" />
+  <img src="4eb5fce48369edc4efcea80f6bd52739.gif" alt="Titan Terraform Animation" width="100%" />
 
   <br/><br/>
 
