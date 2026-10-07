@@ -186,3 +186,47 @@ SOFTWARE.
     </div>
   </div>
 </div>
+
+## Vibrant Infrastructure Flow
+
+```mermaid
+flowchart TB
+    DEV["Developer / CI Pipeline<br/>Terraform CLI"] --> INIT["Terraform Init<br/>Validate / Plan / Apply"]
+    INIT --> ROOT["Root Terraform Workspace"]
+
+    subgraph AWS["AWS Cloud Architecture"]
+        ROOT --> NET["Network Layer<br/>VPC / Public & Private Subnets"]
+        NET --> EDGE["Traffic Layer<br/>Internet Gateway / NAT / ALB"]
+        EDGE --> APP["Compute Layer<br/>EC2 / Auto Scaling / EKS"]
+        APP --> OBS["Observability<br/>CloudWatch Logs & Alerts"]
+        SEC["Security Layer<br/>IAM / KMS / Security Groups"] -. protects .-> NET
+        SEC -. protects .-> APP
+    end
+
+    ROOT --> STATE["Remote State<br/>S3 + DynamoDB Locking"]
+    APP --> OUT["Outputs<br/>Endpoints / DNS / Service Values"]
+
+    classDef source fill:#7c3aed,stroke:#c4b5fd,color:#ffffff,stroke-width:3px;
+    classDef pipeline fill:#db2777,stroke:#f9a8d4,color:#ffffff,stroke-width:3px;
+    classDef network fill:#0891b2,stroke:#67e8f9,color:#ffffff,stroke-width:3px;
+    classDef traffic fill:#2563eb,stroke:#93c5fd,color:#ffffff,stroke-width:3px;
+    classDef compute fill:#d97706,stroke:#fde68a,color:#ffffff,stroke-width:3px;
+    classDef security fill:#dc2626,stroke:#fca5a5,color:#ffffff,stroke-width:3px;
+    classDef state fill:#059669,stroke:#6ee7b7,color:#ffffff,stroke-width:3px;
+    classDef observe fill:#9333ea,stroke:#d8b4fe,color:#ffffff,stroke-width:3px;
+    classDef output fill:#0f766e,stroke:#99f6e4,color:#ffffff,stroke-width:3px;
+
+    class DEV source;
+    class INIT pipeline;
+    class ROOT source;
+    class NET network;
+    class EDGE traffic;
+    class APP compute;
+    class SEC security;
+    class STATE state;
+    class OBS observe;
+    class OUT output;
+
+    style AWS fill:#111827,stroke:#a855f7,stroke-width:3px,color:#f9fafb
+    linkStyle default stroke:#94a3b8,stroke-width:2px
+```
