@@ -76,8 +76,7 @@
         <br/>
         <sub><b>HashiCorp Terraform</b></sub>
       </td>
-
-      <!-- 2. Animated AWS Logo in the Center (Floating glow + breathing smile animation) -->
+<!-- 2. Animated AWS Logo in the Center (Floating glow + breathing smile animation) -->
       <td align="center" width="240" valign="bottom">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 180" width="140" height="110">
           <defs>
