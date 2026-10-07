@@ -110,6 +110,7 @@ SOFTWARE.
 ```
 
 ```
+<div align="center">
   ⚠️ DISCLAIMER
       </h3>
       <p style="margin: 0; font-size: 0.95rem;">
