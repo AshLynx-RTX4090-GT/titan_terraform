@@ -17,6 +17,7 @@
     <a href="https://aws.amazon.com/"><img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS" /></a>
     <a href="https://www.terraform.io/"><img src="https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform" /></a>
     <a href="#license"><img src="https://img.shields.io/badge/License-MIT-purple.svg?style=for-the-badge" alt="License: MIT" /></a>
+    <a href="https://aws.amazon.com/devops/"><img src="https://img.shields.io/badge/DevOps-FF6F00?style=for-the-badge&logo=azuredevops&logoColor=white" alt="DevOps" /></a>
   </p>
 
   <br/>
