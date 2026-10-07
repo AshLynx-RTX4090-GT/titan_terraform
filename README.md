@@ -67,6 +67,7 @@
 ### Deployment Commands
 
 ```bash
+```
 # Clone the repository
 git clone [https://github.com/your-username/titian_terraform.git](https://github.com/your-username/titian_terraform.git)
 cd titian_terraform
@@ -82,3 +83,35 @@ terraform plan
 
 # Provision resources
 terraform apply
+
+```
+```
+MIT License
+
+Copyright (c) 2024 titian_terraform contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+```
+### 💡 Tips for GitHub / Local Rendering:
+1. **Local GIF Path**: GitHub cannot load absolute local drive paths (like `file:///E:/...`) once pushed online. For GitHub to show the animated GIF properly, put `4eb5fce48369edc4efcea80f6bd52739.gif` into an `assets/` folder in your project repository and update the source tag to:
+   ```html
+   <img src="./assets/4eb5fce48369edc4efcea80f6bd52739.gif" alt="Titan Terraform Animation" width="100%" />
+   ```
