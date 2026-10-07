@@ -1,14 +1,14 @@
 <div align="center">
 
+  <!-- Project Heading -->
+  <h1 style="color: #a855f7; text-shadow: 0 0 10px #9333ea, 0 0 20px #7e22ce, 0 0 30px #6b21a8; font-size: 3.5rem; font-weight: 800; letter-spacing: 2px;">
+    titan_terraform
+  </h1>
+
   <!-- Top Running Banner GIF -->
   <img src="4eb5fce48369edc4efcea80f6bd52739.gif" alt="Titan Terraform Animation" width="100%" />
 
   <br/><br/>
-
-  <!-- Glowing Purple Heading -->
-  <h1 style="color: #a855f7; text-shadow: 0 0 10px #9333ea, 0 0 20px #7e22ce, 0 0 30px #6b21a8; font-size: 3.5rem; font-weight: 800; letter-spacing: 2px;">
-    titian_terraform
-  </h1>
 
   <p><strong>Enterprise Infrastructure as Code (IaC) Architected for Scalability, High Availability & Security</strong></p>
 
@@ -25,11 +25,11 @@
   <table border="0" align="center">
     <tr>
       <td align="center" width="200">
-        <img src="https://raw.githubusercontent.com/hashicorp/terraform-website/master/public/img/logo-hashicorp.svg" width="90" alt="Terraform Logo" /><br/>
+        <img src="https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white" width="150" alt="Terraform Logo" /><br/>
         <sub><b>HashiCorp Terraform</b></sub>
       </td>
       <td align="center" width="220">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" width="120" alt="AWS Logo" /><br/>
+        <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" width="120" alt="AWS Logo" /><br/>
         <sub><b>Amazon Web Services</b></sub>
       </td>
       <td align="center" width="200">
