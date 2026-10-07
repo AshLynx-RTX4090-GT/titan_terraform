@@ -110,8 +110,37 @@ SOFTWARE.
 ```
 
 ```
-### 💡 Tips for GitHub / Local Rendering:
-1. **Local GIF Path**: GitHub cannot load absolute local drive paths (like `file:///E:/...`) once pushed online. For GitHub to show the animated GIF properly, put `4eb5fce48369edc4efcea80f6bd52739.gif` into an `assets/` folder in your project repository and update the source tag to:
-   ```html
-   <img src="./assets/4eb5fce48369edc4efcea80f6bd52739.gif" alt="Titan Terraform Animation" width="100%" />
-   ```
+<div align="center">
+  <div style="
+    background: linear-gradient(90deg, #ff0055, #7a00ff, #00e5ff, #00ff66, #ffbe00, #ff0055);
+    background-size: 300% 300%;
+    padding: 3px;
+    border-radius: 14px;
+    max-width: 820px;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(122, 0, 255, 0.4);
+  ">
+    <div style="
+      background-color: #0d1117;
+      color: #e6edf3;
+      padding: 24px 30px;
+      border-radius: 12px;
+      text-align: center;
+      line-height: 1.6;
+    ">
+      <h3 style="
+        color: #ffbe00; 
+        margin-top: 0; 
+        margin-bottom: 12px; 
+        font-size: 1.3rem; 
+        letter-spacing: 1px;
+      ">
+        ⚠️ DISCLAIMER
+      </h3>
+      <p style="margin: 0; font-size: 0.95rem;">
+        <strong>Important:</strong> This project and the accompanying Terraform code are provided for educational, demonstration, and architectural prototyping purposes. Deploying resources using these templates will provision real cloud infrastructure and may incur costs on your AWS billing account. Review and validate all configurations against your organization's security, compliance, and governance policies before applying them to production environments. The author assumes no responsibility for any unintended expenses, resource modifications, or outages resulting from using this repository.
+      </p>
+    </div>
+  </div>
+</div>
+```
